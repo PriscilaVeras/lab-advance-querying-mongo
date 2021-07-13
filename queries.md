@@ -151,9 +151,6 @@ db.companies.find(
 ).limit(10)
 
 ### 19. All the companies that have been founded between 2000 and 2010, but have not been acquired before 2011.
-
-
-
 db.companies.find(
   {'acquisition.acquired_year': {$gte: 2011},founded_year: {$gt: 2000,$lt: 2010}}
 )
